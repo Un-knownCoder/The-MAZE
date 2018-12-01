@@ -1,5 +1,5 @@
 # The MAZE Game
-#### _(by Un-knownCoder and ...)_
+_(by Un-knownCoder and ...)_
 
 ## Installation
 In the code there isn't any module... You MUST install them to make the game work.
