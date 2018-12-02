@@ -1,0 +1,22 @@
+:root {
+   --wall: url('images/wall.png');
+   --ground: url('images/wall.png');
+   --oDoor: url('images/wall.png');
+   --cDoor: url('images/wall.png');
+   --hero: url('images/wall.png');
+   --key: url('images/wall.png');
+   --end: url('images/wall.png');
+}
+
+table {
+   margin:auto;
+   border:3px solid #ddd;
+   border-radius:5px;
+}
+
+table tr td {
+   width: 40px;
+   height: 40px;
+
+   background: #eee;
+}
