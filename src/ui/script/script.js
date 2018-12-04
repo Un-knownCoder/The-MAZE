@@ -1,6 +1,9 @@
 const mazeHandler = io();
 let login;
 
+if(document.cookie)
+   mazeHandler.emit('admin log', document.cookie);
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function load() {
@@ -27,7 +30,8 @@ function tryLogin() {
                      title: 'You logged-in as ADMIN',
                      type: 'success'
                   }).then(() => {
-                     login = 'admin';
+                     login = input;
+                     document.cookie = login;
                      resolve()
                   });
                });
@@ -44,6 +48,8 @@ let cond;
 
 mazeHandler.emit('get maze');
 mazeHandler.on('maze', (elem) => {
+   document.getElementById('maze').classList = '';
+   document.getElementById('maze').classList = 's40';
    maze = elem.matrix;
    player = elem.player;
    console.log(maze)

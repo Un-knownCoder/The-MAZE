@@ -221,8 +221,28 @@ footer div.social-media-links a:hover svg circle {
 table {
   margin: auto;
   margin-top: 25px;
-  border: 3px solid #6f787e;
+  border-collapse: collapse;
   border-radius: 5px;
+
+  box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.25),
+  0 12px 24px -6px rgba(0, 0, 0, 0.25),
+  0 12px 32px 12px rgba(0, 0, 0, 0.125);
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+table tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+
+table tr:first-child td:last-child {
+  border-top-right-radius: 10px;
 }
 
 table tr td {
@@ -263,9 +283,7 @@ table tr td.wall {
 }
 
 table tr td.grass {
-  background: url('../style/images/grass.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #fff;
 }
 
 table tr td.hero {
@@ -275,15 +293,21 @@ table tr td.hero {
 }
 
 table tr td.oDoor {
-  background: rgb(0, 196, 16);
+  background: url('../style/images/Door_open.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 table tr td.cDoor {
-  background: rgb(182, 63, 63);
+  background: url('../style/images/Door_close.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 table tr td.key {
-  background: rgb(206, 149, 64);
+  background: url('../style/images/Key.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 table tr td.end {
